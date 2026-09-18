@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      # context: ./frontend
+      dockerfile: Dockerfile
+    # environment:
+    #   - VITE_API_BASE_URL=https://api.mc.dstw.dev  # 正式環境打 API 網址
+    expose:
+      - "80"
+    restart: always
+
+# volumes:
+  # postgres_prod_data:
